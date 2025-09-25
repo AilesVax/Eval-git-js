@@ -7,8 +7,8 @@ const displayError = (message) => {
 }
 
 const getData = async () => {
-  let devise1 = document.getElementById('devise1').value;
-  let devise2 = document.getElementById('devise2').value;
+  let devise1 = document.getElementById('money_select').value;
+  let devise2 = document.getElementById('money_select2').value;
   const response = await fetch(`https://v6.exchangerate-api.com/v6/7008e2ab61722b071e7bf8fe/pair/${devise1}/${devise2}`)
     .catch(error => {
       console.error("Error:", error)
