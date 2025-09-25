@@ -24,7 +24,6 @@ const getData2 = async () => {
     let elements2 = document.getElementById('money_select2')
     elements2.innerHTML = content
 
-    auto.addEventListener('change',async () => {
         let select1 = elements.value;
   let select2 = elements2.value;
 
@@ -54,7 +53,7 @@ const getData2 = async () => {
       container.innerHTML = test
     });
        console.log(response)
-   });
+  
 
  
     
