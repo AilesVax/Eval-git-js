@@ -29,8 +29,6 @@ const getData = async () => {
       test = Number(nombre.value) * conversion;
       container.innerHTML = test
     });
-
-console.log(conversion)
     
 
   }
