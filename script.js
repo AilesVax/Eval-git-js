@@ -16,16 +16,16 @@ const getData2 = async () => {
 
     let elements2 = document.getElementById('money_select2')
     elements2.innerHTML = content
-
-    auto.addEventListener('change',async () => {
-        let select1 = elements.value;
-  let select2 = elements2.value;
+    async function update() {
+      let select1 = elements.value;
+      let select2 = elements2.value;
 
       const response = await fetch(`https://v6.exchangerate-api.com/v6/7008e2ab61722b071e7bf8fe/pair/${select1}/${select2}`)
         .catch(error => {
           console.error("Error:", error)
           displayError("Une erreur est survenue")
         });
+
 
       console.log(response)
       const data2 = await response.json();
@@ -50,8 +50,8 @@ const getData2 = async () => {
     auto.addEventListener('change', () => {
       update()
     });
-       console.log(response)
-   });
+    console.log(response)
+
 
 
 
