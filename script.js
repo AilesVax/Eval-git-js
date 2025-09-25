@@ -41,7 +41,7 @@ const getData2 = async () => {
 
       test = Number(nombre.value) * conversion;
 
-      container.innerHTML = test
+      container.innerHTML += test + "<br>";
     }
 
     nombre.addEventListener('input', () => {
