@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+        
+#auto {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+        
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+        
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    text-align: center;
+}
+        
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+        
+input {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+        
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+    
+input::placeholder {
+    text-align: center;
+}
+
+.tauxChange {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+        
+.resultat {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.historique {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #909ea1;
+    border-radius: 4px;
+    text-align: center;
+}
