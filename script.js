@@ -48,7 +48,7 @@ const getData2 = async () => {
       hist += tout 
       console.log(hist);
       localStorage.setItem('historique', hist);
-    localStorage.clear();
+      localStorage.clear();
       let histAff = document.getElementsByClassName('historique')[0];
       histAff.innerHTML += hist
     }
