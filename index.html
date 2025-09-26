@@ -4,25 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>convertion de devise</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <p></p>
     <div id="auto">
-    <label >Money 1</label>
+        <label>Devise source</label>
+        <select id="money_select"></select>
 
-    <select id="money_select" >
-    </select>
-
-    <label>Money 2</label>
-    <select id="money_select2">
-    </select>
+        <label>Devise cible</label>
+        <select id="money_select2"></select>
     </div>
 
-    <input type="number" id="nombre">
+    <input type="number" id="nombre" placeholder="Montant à convertir">
     <p class="tauxChange"></p>
     <p class="resultat"></p>
+    <p class="historique"></p>
 </body>
 <script src="script.js"></script>
 </html>

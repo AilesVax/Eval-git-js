@@ -73,4 +73,3 @@ const getData2 = async () => {
 getData2()
 
 
-
