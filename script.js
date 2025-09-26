@@ -26,7 +26,7 @@ const getData2 = async () => {
           displayError("Une erreur est survenue")
         });
 
-      console.log(response)
+
       const data2 = await response.json();
 
       const container = document.querySelector(".resultat");
@@ -40,7 +40,16 @@ const getData2 = async () => {
 
       test = Number(nombre.value) * conversion;
 
-      container.innerHTML = test
+      container.innerHTML += test + "<br>" 
+      
+      let hist = localStorage.getItem('historique');
+
+      let tout =  `${new Date()} : ${Number(nombre.value)} ${select1} = ${test} ${select2} \n`;
+      hist += tout 
+      console.log(hist);
+      localStorage.setItem('historique', hist);
+      let histAff = document.getElementsByClassName('.historique')
+      histAff.innerHTML += hist
     }
 
     nombre.addEventListener('input', () => {
@@ -48,8 +57,9 @@ const getData2 = async () => {
     });
     auto.addEventListener('change', () => {
       update()
-    });
-    console.log(response)
+
+    }); 
+
 
 
 
