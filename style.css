@@ -23,7 +23,7 @@ label {
     color: #2c3e50;
     text-align: center;
 }
-        
+/* case devise */      
 select {
     width: 100%;
     padding: 10px;
@@ -40,7 +40,7 @@ select:focus {
     border-color: #3498db;
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
-        
+/* case montant */       
 input {
     width: 100%;
     padding-top: 12px;
@@ -67,7 +67,7 @@ input::placeholder {
     color: #7f8c8d;
     margin-bottom: 5px;
 }
-        
+/* case resultat */       
 .resultat {
     font-size: 24px;
     font-weight: bold;
@@ -78,7 +78,7 @@ input::placeholder {
     border-radius: 4px;
     text-align: center;
 }
-
+/* case historique */
 .historique {
     font-size: 24px;
     font-weight: bold;
