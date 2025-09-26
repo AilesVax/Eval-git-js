@@ -40,7 +40,7 @@ const getData2 = async () => {
 
       test = Number(nombre.value) * conversion;
 
-      container.innerHTML += test + "<br>" 
+      container.innerHTML += test + "&nbsp" + select2 + "<br>" 
       
       let hist = localStorage.getItem('historique');
 
@@ -48,7 +48,8 @@ const getData2 = async () => {
       hist += tout 
       console.log(hist);
       localStorage.setItem('historique', hist);
-      let histAff = document.getElementsByClassName('.historique')
+    localStorage.clear();
+      let histAff = document.getElementsByClassName('historique')[0];
       histAff.innerHTML += hist
     }
 
