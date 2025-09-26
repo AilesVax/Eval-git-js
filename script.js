@@ -1,6 +1,7 @@
 const getData2 = async () => {
-
-  const response2 = await fetch("https://v6.exchangerate-api.com/v6/7008e2ab61722b071e7bf8fe/latest/USD")
+const key = "423d70fb928c5caf0e35b2d2";
+const api = "https://v6.exchangerate-api.com/v6/"
+  const response2 = await fetch(`${api}${key}/latest/USD`)
 
   if (response2.status < 300) {
     const data = await response2.json();
@@ -8,8 +9,8 @@ const getData2 = async () => {
     const rates = data.conversion_rates;
     let auto = document.getElementById('auto');
 
-    for (let currency in rates) {
-      content += `<option value="${currency}">${currency}</option>`;
+    for (let All_devise in rates) {
+      content += `<option value="${All_devise}">${All_devise}</option>`;
     }
     let elements = document.getElementById('money_select')
     elements.innerHTML = content
@@ -20,7 +21,7 @@ const getData2 = async () => {
       let select1 = elements.value;
       let select2 = elements2.value;
 
-      const response = await fetch(`https://v6.exchangerate-api.com/v6/7008e2ab61722b071e7bf8fe/pair/${select1}/${select2}`)
+      const response = await fetch(`${api}${key}/pair/${select1}/${select2}`)
         .catch(error => {
           console.error("Error:", error)
           displayError("Une erreur est survenue")
