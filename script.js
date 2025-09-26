@@ -42,15 +42,17 @@ const getData2 = async () => {
 
       container.innerHTML += test + "&nbsp" + select2 + "<br>" 
       
-      let hist = localStorage.getItem('historique');
+      let hist = localStorage.getItem('historique') || "";
 
-      let tout =  `${new Date()} : ${Number(nombre.value)} ${select1} = ${test} ${select2} \n`;
+
+      const Date_actuelle = new Date()
+
+      let tout =  `${Date_actuelle.getDay()}/${Date_actuelle.getMonth()}/${Date_actuelle.getFullYear()}  : ${Number(nombre.value)} ${select1} = ${test} ${select2} <br>`;
       hist += tout 
       console.log(hist);
       localStorage.setItem('historique', hist);
-      localStorage.clear();
       let histAff = document.getElementsByClassName('historique')[0];
-      histAff.innerHTML += hist
+      histAff.innerHTML = hist + "<br>" 
     }
 
     nombre.addEventListener('input', () => {
